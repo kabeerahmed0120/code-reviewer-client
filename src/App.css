@@ -1,0 +1,40 @@
+  /* Moving Starry Background */
+        body {
+            background-color: #050510;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            animation: stars 100s linear infinite;
+        }
+
+        @keyframes stars {
+            0% { background-position: 0 0; }
+            100% { background-position: -1000px 1000px; }
+        }
+
+        /* Sci-Fi Grid Background for Text Areas */
+        .sci-fi-grid {
+            background-image: 
+                linear-gradient(rgba(34, 211, 238, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(34, 211, 238, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        /* Custom Scrollbar for a clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #0891b2; border-radius: 4px; }
+        
+        /* Neon Pulse Animation for Button */
+        @keyframes pulse-orange {
+            0%, 100% { box-shadow: 0 0 10px rgba(249, 115, 22, 0.5); }
+            50% { box-shadow: 0 0 25px rgba(249, 115, 22, 0.9); }
+        }
+        .btn-glow {
+            animation: pulse-orange 2s infinite;
+        }
